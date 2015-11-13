@@ -73,6 +73,7 @@ def api():
 def main():
     print 'start: \n'
     msg = api()
+    msg = msg.replace("<br>", " ")
     msg = msg[0:158]
     init()
     login()
@@ -85,7 +86,6 @@ def task( second ):
         time.sleep(second)
 
 task(second_time)
-
 
 
 
